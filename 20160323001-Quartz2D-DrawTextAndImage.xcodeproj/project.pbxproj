@@ -15,6 +15,8 @@
 		D5B723631CA2467D008A4D60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5B723611CA2467D008A4D60 /* LaunchScreen.storyboard */; };
 		D5B7236E1CA2467D008A4D60 /* _0160323001_Quartz2D_DrawTextAndImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B7236D1CA2467D008A4D60 /* _0160323001_Quartz2D_DrawTextAndImageTests.m */; };
 		D5B723791CA2467D008A4D60 /* _0160323001_Quartz2D_DrawTextAndImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B723781CA2467D008A4D60 /* _0160323001_Quartz2D_DrawTextAndImageUITests.m */; };
+		D5B723881CA26296008A4D60 /* DrawTextAndImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B723871CA26296008A4D60 /* DrawTextAndImageView.m */; };
+		D5B7238A1CA2636C008A4D60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B723891CA2636C008A4D60 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		D5B723741CA2467D008A4D60 /* 20160323001-Quartz2D-DrawTextAndImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "20160323001-Quartz2D-DrawTextAndImageUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B723781CA2467D008A4D60 /* _0160323001_Quartz2D_DrawTextAndImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _0160323001_Quartz2D_DrawTextAndImageUITests.m; sourceTree = "<group>"; };
 		D5B7237A1CA2467D008A4D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5B723861CA26296008A4D60 /* DrawTextAndImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawTextAndImageView.h; sourceTree = "<group>"; };
+		D5B723871CA26296008A4D60 /* DrawTextAndImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawTextAndImageView.m; sourceTree = "<group>"; };
+		D5B723891CA2636C008A4D60 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5B7238A1CA2636C008A4D60 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,7 @@
 		D5B723471CA2467D008A4D60 = {
 			isa = PBXGroup;
 			children = (
+				D5B723891CA2636C008A4D60 /* UIKit.framework */,
 				D5B723521CA2467D008A4D60 /* 20160323001-Quartz2D-DrawTextAndImage */,
 				D5B7236C1CA2467D008A4D60 /* 20160323001-Quartz2D-DrawTextAndImageTests */,
 				D5B723771CA2467D008A4D60 /* 20160323001-Quartz2D-DrawTextAndImageUITests */,
@@ -106,6 +113,8 @@
 				D5B723591CA2467D008A4D60 /* ViewController.h */,
 				D5B7235A1CA2467D008A4D60 /* ViewController.m */,
 				D5B7235C1CA2467D008A4D60 /* Main.storyboard */,
+				D5B723861CA26296008A4D60 /* DrawTextAndImageView.h */,
+				D5B723871CA26296008A4D60 /* DrawTextAndImageView.m */,
 				D5B7235F1CA2467D008A4D60 /* Assets.xcassets */,
 				D5B723611CA2467D008A4D60 /* LaunchScreen.storyboard */,
 				D5B723641CA2467D008A4D60 /* Info.plist */,
@@ -271,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5B7235B1CA2467D008A4D60 /* ViewController.m in Sources */,
+				D5B723881CA26296008A4D60 /* DrawTextAndImageView.m in Sources */,
 				D5B723581CA2467D008A4D60 /* AppDelegate.m in Sources */,
 				D5B723551CA2467D008A4D60 /* main.m in Sources */,
 			);

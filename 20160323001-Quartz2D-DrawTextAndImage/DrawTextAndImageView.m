@@ -1,23 +1,37 @@
 //
-//  ViewController.m
+//  DrawTextAndImageView.m
 //  20160323001-Quartz2D-DrawTextAndImage
 //
 //  Created by Rainer on 16/3/23.
 //  Copyright © 2016年 Rainer. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "DrawTextAndImageView.h"
 
-@interface ViewController ()
+@implementation DrawTextAndImageView
 
-@property (weak, nonatomic) IBOutlet UILabel *textLabel;
 
-@end
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect {
+    
+    // 超出指定区域就裁剪掉：（这个方法一定要放在绘制图片之前）
+    UIRectClip(CGRectMake(0, 0, 100, 100));
+    
+    UIImage *image = [UIImage imageNamed:@"001"];
+    
+    // 使用这个方法绘制的图片默认跟图片本身大小一样
+//    [image drawAtPoint:CGPointZero];
+    
+    // 在指定全区域中绘制一张按比例缩放好的图片
+//    [image drawInRect:rect];
+    
+    // 绘制平铺图片
+    [image drawAsPatternInRect:rect];
+}
 
-@implementation ViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)drawText {
+    NSString *textString = @"测试画文本";
     
     // 字体设置
     NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
@@ -42,14 +56,9 @@
     
     // 字体阴影
     attributes[NSShadowAttributeName] = shadow;
-
     
-    self.textLabel.attributedText = [[NSAttributedString alloc] initWithString:@"用来测试的文本" attributes:attributes];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    // 将文字画入视图中
+    [textString drawInRect:self.bounds withAttributes:attributes];
 }
 
 @end
