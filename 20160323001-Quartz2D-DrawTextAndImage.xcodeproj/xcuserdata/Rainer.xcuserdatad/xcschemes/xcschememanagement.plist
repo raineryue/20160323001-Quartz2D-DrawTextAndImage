@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>20160323001-Quartz2D-DrawTextAndImage.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>D5B7234F1CA2467D008A4D60</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D5B723681CA2467D008A4D60</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D5B723731CA2467D008A4D60</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
